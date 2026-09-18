@@ -10,7 +10,6 @@ services:
       - "127.0.0.1:17600:17493"
 
     volumes:
-      - ./output:/app/data/generations
       - voicebox-data:/app/data
       - huggingface-cache:/home/voicebox/.cache/huggingface
 
