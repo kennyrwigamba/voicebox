@@ -17,9 +17,9 @@ services:
       - LOG_LEVEL=info
       - NUMBA_CACHE_DIR=/tmp/numba_cache
       # Allow PyTorch to utilize the allocated ARM cores
-      - OMP_NUM_THREADS=10
-      - OPENBLAS_NUM_THREADS=10
-      - MKL_NUM_THREADS=10
+      - OMP_NUM_THREADS=4
+      - OPENBLAS_NUM_THREADS=4
+      - TORCH_NUM_THREADS=4
 
     networks:
       - voicebox-net
